@@ -1,6 +1,20 @@
 import React from 'react';
-import '../../App.css';
+import './AddProduct.css';
 
-export default function AddProduct() {
-  return <h1 className='addProduct'>Add Product</h1>;
+const Create = () => {
+  return (
+    <div className='create'>
+      <form>
+        <label>Item name:</label>
+        <input type = "text" required/>
+        <label>Item description:</label>
+        <textarea type = "text" required/>
+        <label>Item cost</label>
+        <input type = "number" required/>
+        <button>Post</button>
+      </form>
+    </div>
+  )
 }
+
+export default Create;

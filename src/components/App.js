@@ -12,7 +12,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import 'C:/Users/vihe8/Grillic/src/App.css';
 import Home from './pages/Home';
 import Products from './pages/Products';
-import SignUp from './pages/SignUp';
+import SearchPage from './pages/SearchPage';
+import AddProduct from './pages/AddProduct';
 
 function App() {
   return (
