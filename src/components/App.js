@@ -2,7 +2,6 @@ import React from "react"
 import Signup from "./Signup"
 import { Container } from "react-bootstrap"
 import { AuthProvider } from "../contexts/AuthContext"
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import Dashboard from "./Dashboard"
 import Login from "./Login"
 import PrivateRoute from "./PrivateRoute"
@@ -25,23 +24,18 @@ function App() {
       <div className="w-100" style={{ maxWidth: "400px" }}>
         <Router>
           <AuthProvider>
-            <Switch>
-              <PrivateRoute exact path="/" component={Dashboard} />
-              <PrivateRoute path="/update-profile" component={UpdateProfile} />
-              <Route path="/signup" component={Signup} />
-              <Route path="/login" component={Login} />
-              <Route path="/forgot-password" component={ForgotPassword} />
-            </Switch>
-          </AuthProvider>
-          <Router>
             <Navbar />
             <Routes>
+              <PrivateRoute exact path="/" component={<Dashboard />} />
+              <PrivateRoute exact path="/update-profile" component={<UpdateProfile/>} />
+              <Route exact path="/signup" component={<Signup />} />
+              <Route exact path="/login" component={<Login />} />
+              <Route exact path="/forgot-password" component={<ForgotPassword />} />
               <Route exact path="/" element={<Home />} />
-              <Route exact path='/services' element={<Services />} />
               <Route exact path='/products' element={<Products />} />
               <Route exact path='/signup' element={<SignUp />} />
             </Routes>
-          </Router>
+          </AuthProvider>
         </Router>
       </div>
     </Container>
