@@ -32,7 +32,6 @@ function App() {
               <Route path="/forgot-password" component={ForgotPassword } />
               <Route path="/" element={Home } />
               <Route path='/products' element={Products } />
-              <Route path='/signup' element={SignUp } />
             </Switch>
           </AuthProvider>
         </Router>
