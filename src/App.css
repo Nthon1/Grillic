@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    align-items: center;
+    font-family: 'PT Sans', sans-serif;
+  }
+  
+  .home,
+  .sign-up {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+  }
+  
+  .signup {
+    /* background-image: url(public\Grillic_logo.png); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
