@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../App.css';
+import './AddProduct.css';
 
 const Create = () => {
   return (
