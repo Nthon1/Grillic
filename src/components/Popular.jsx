@@ -14,6 +14,7 @@ function Popular() {
         console.log(data);
     }
 
+    <p>Hello WOrld</p>
     return <div>Popular</div>
 }
 

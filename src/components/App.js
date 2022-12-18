@@ -9,7 +9,7 @@ import ForgotPassword from "./ForgotPassword"
 import UpdateProfile from "./UpdateProfile"
 import Navbar from './Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import 'C:/Users/vihe8/Grillic/src/App.css';
+import '/Users/nityathondapu/Test for Login Page/React-Firebase-Auth/src/App.css';
 import Home from './pages/Home';
 import Products from './pages/Products';
 import SignUp from './pages/SignUp';
